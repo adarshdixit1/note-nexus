@@ -20,6 +20,11 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "baseUrl": "./",
+  "paths":{
+    "@schemas":["./src/schemas/index.ts"],
+    "@constant": ["src/constant/index.ts"],
+  },
   "include": [
     "src"
   ]
