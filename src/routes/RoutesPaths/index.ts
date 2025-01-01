@@ -1,4 +1,4 @@
 export const RoutePaths = {
-  loginPath: "/login",
+  loginPath: "/",
   dashboard:"/"
 };

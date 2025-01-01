@@ -1,10 +1,10 @@
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { publicRoutes, privateRoutes } from "../index";
-// import { MemberLayout, VisitorLayout } from "../RouterLazyImports";
 import { Wrappers } from "../../components/common";
+import { AuthLayout,NonAuthLayout } from "../routerLazyImports";
 
-const Index = () => {
+const Index = () => (
   <Wrappers>
     <Suspense>
       <Routes>
@@ -12,9 +12,9 @@ const Index = () => {
           <Route
             path={route.path}
             element={
-            //   <VisitorLayout>
+              <AuthLayout>
                 <route.component />
-            //   </VisitorLayout>
+              </AuthLayout>
             }
             key={index}
           />
@@ -23,16 +23,16 @@ const Index = () => {
           <Route
             path={route.path}
             element={
-            //   <MemberLayout>
+              <NonAuthLayout>
                 <route.component />
-            //   </MemberLayout>
+              </NonAuthLayout>
             }
             key={index}
           />
         ))}
       </Routes>
     </Suspense>
-  </Wrappers>;
-};
+  </Wrappers>
+);
 
 export default Index;
