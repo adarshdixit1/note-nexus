@@ -14,7 +14,6 @@ export const Wrappers = ({ children }: LayoutProps) => {
             sx={{
               flex: 1,
               overflow: "auto",
-              mt: 18.5,
             }}
           >
             {children}

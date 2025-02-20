@@ -12,9 +12,9 @@ const Index = () => (
           <Route
             path={route.path}
             element={
-              <AuthLayout>
+              // <AuthLayout>
                 <route.component />
-              </AuthLayout>
+              // </AuthLayout>
             }
             key={index}
           />
@@ -25,7 +25,7 @@ const Index = () => (
             element={
               <NonAuthLayout>
                 <route.component />
-              </NonAuthLayout>
+             </NonAuthLayout>
             }
             key={index}
           />

@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <Box>
+    <Box sx={{m:0,p:0}}>
       <Router>
         <RouterManager />
       </Router>
