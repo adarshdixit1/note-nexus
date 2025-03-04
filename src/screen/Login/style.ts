@@ -14,6 +14,13 @@ export const styles = {
         flexDirection: "column",
         justifyContent: "space-between",
         m:0,
-        p:0
+        p:0,
       },
+      container:{
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center",
+        height:"100vh",
+        weidth:"100vw"
+      }
 }
